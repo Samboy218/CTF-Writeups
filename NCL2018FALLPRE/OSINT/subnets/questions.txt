@@ -1,0 +1,11 @@
+What is a valid IP address of the 10.128.0.0/9 network?	10	
+	10.128.0.1
+What is the first possible host IP for the 10.25.192.0/18 network?	10	
+	10.25.192.1
+What is the netmask for the 10.96.0.0/19 network?	10
+	255.255.224.0	
+What is the broadcast address for the 10.16.0.0/12 subnet?	10
+	10.31.255.255	
+How many hosts are possible in the 10.84.0.0/14 network?	10
+		32-14 gives 18 bits, 2^18, but remember that the broadcast address is not usable
+	262142

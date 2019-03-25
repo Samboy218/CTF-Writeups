@@ -1,0 +1,10 @@
+What is the CVE for Dirty Cow?	10	
+	CVE-2016-5195
+What company was affected by the Cloudbleed vulnerability?	10
+	cloudflare	
+What is the RFC number for TLS 1.2?	10	
+	5246
+What was the first implementation of RPC called?	10
+	lupine	
+What is the Metasploit module name that can be used to exploit the CVE-2017-6510 vulnerability?	10
+	easy_file_sharing_ftp.rb

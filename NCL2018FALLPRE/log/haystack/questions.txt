@@ -1,0 +1,6 @@
+gpg --import liber8tion.gpg
+mkdir tmp
+cd tmp
+csplit ../FlagInHaystack.txt '/^-----BEGIN PGP SIGNED MESSAGE-----$/' {*}
+for f in `ls`; do echo $f >> results; gpg --verify $f 2>> results; done
+#then just find 'Good' in results

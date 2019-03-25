@@ -1,0 +1,8 @@
+just google these
+
+What port does the LDAP service use?	5	
+What port does the IMAP service use?	5	
+What port does MySQL use?	5	
+What port does the DNS service operate on?	5	
+What port was assigned for the IRC service by IANA?	5	
+

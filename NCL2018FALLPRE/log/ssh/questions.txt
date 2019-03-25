@@ -1,0 +1,24 @@
+How many different IP addresses attempted to break in to the SSH server?    15  
+        cat SSH.log | grep "Failed password" | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | sort | uniq | wc -l
+    81
+How many different usernames were attempted?    20
+        cat SSH.log | grep -oE "Failed password for (.*) from" | sort | uniq | wc -l
+    48
+What IP address made the most number of attempts?   30
+        cat SSH.log | grep "Failed password" | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | sort | uniq -c | sort -n
+    61.177.172.24
+What is the country of origin of the above IP address?  10
+        use a geoip service
+    china
+What was the 5th most attempted username?   30
+        cat SSH.log | grep -oE "Failed password for (.*) from" | sort | uniq -c | sort -n
+    ubnt
+What is the total number of failed attempts (ssh attempt failures)? 50
+        this one is tricky because some of the attempts are compressed into "message repeated X times"
+        so we need to actually count those out
+        cat SSH.log | grep sshd.\*Failed | grep -v "repeated" > exact.out
+        cat SSH.log | grep sshd.\*Failed | grep  "repeated" > repeated.out
+        cat repeated.out | sed -nr 's/.*repeated (.*) times.*/\1/p' | awk '{ sum += $1 } END { print sum }' >> count
+        cat exact.out | wc -l >> count
+        cat count | awk '{ sum += $1 } END { print sum }'
+    13965

@@ -1,0 +1,15 @@
+What tool generated this traffic?   5   
+    nmap
+How many hosts responded to the scan?   10
+        icmp.type == 0
+    7
+What is the target subnet in CIDR notation? 20
+        icmp.type == 8
+    192.168.30.0/23
+What's an IP address that had VNC running?  10
+        little bit tricky, 5900 is the default port for vnc, but actually connections are made on port default+display number. so we filter on 5901 and see who responded to the scanner 192.168.22.3
+        tcp.port == 5901
+    192.168.30.65
+What IP address had a mail server running?  10
+        tcp.port == 25
+    192.168.31.94

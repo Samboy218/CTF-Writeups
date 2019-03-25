@@ -1,0 +1,7 @@
+User	Points	Encrypted Password	Answer
+Patrick
+	20	zvahgrfjnirfnsrgl	minuteswavesafety ROT13
+Veronika
+	25	zayprlzwypun		zayprlzwypun ROT19
+Nan
+	25	gpxhtsgdrz		raisedrock ROT11

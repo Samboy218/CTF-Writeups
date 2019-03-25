@@ -1,0 +1,18 @@
+How many people are going on the trip?  10
+        http.request.method == POST
+    2
+What is the airport code that Tom is departing from?    20
+    DCA
+On what date does Tom get back to home? 30
+        okay the form says 7/8/2017, but for some reason the answer is 2017-07-09...iunno
+    2017-07-09
+What is the name of the hotel that Tom is staying at?   30
+        look at http packets. you can export the bytes and open them in your web browser, its ugly but it works
+    Turtle Bay Resort
+What type of room will Tom be staying in?   20
+    Deluxe Oceanview King
+How much in total did Tom pay for his vacation? 50
+        just have to trudge through the http data
+    7541.65
+
+    there is one webpage which has the last 3 questions

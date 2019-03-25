@@ -1,0 +1,6 @@
+What is the encryption cipher that was the precursor to DES?	10	
+	lucifer
+What type of cipher is the Caesar cipher?	10	
+	substitution
+What is the name of the device the British used to crack messages from the Enigma machines?	10
+	bombe

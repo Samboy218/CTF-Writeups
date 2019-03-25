@@ -1,0 +1,20 @@
+grep grep grep
+NOTE: I didn't write down the answers to this as I did it, so I had to redo it later without the scoring system, some of these may be wrong
+
+How many times were packages successfully installed (marked "status installed") on the machine?	10	
+        cat all.out | grep "status installed" | wc -l
+    2130
+How many times was the mysql-server-core-5.5 package upgraded?	10	
+        there is a package with "upgrader" in its name, so be sure to filter that our
+        cat all.out | grep upgrade | grep -v upgrader | grep mysql-server-core-5.5 | wc -l
+    6
+What non Linux-related package was removed the most?	15	
+        cat all.out | grep remove | grep -v linux | grep -v startup | sed -nr 's/.*(remove.*)/\1/p' | sort | uniq -c | sort -n
+        that command makes it seem like there are multiple, but I think you don't count different versions as different, which makes mongodb-org the answer
+    mongodb-org
+What date had the most upgrades on a single day?	25	
+        cat all.out | grep upgrade | grep -v upgrader | sed -nr 's/(^[0-9]{4}-[0-9]{2}-[0-9]{2}).*/\1/p' | sort | uniq -c | sort -n
+    2016-05-16
+What exact version of mysql-client-core-5.5 was available on the system on 2016-10-10 (use full text)
+        cat all.out | grep mysql-client-core-5.5 | sort -n
+    5.5.52-0ubuntu0.14.04.1

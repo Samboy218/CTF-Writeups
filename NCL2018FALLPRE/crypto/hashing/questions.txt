@@ -1,0 +1,12 @@
+cyberchef has all of these algorithms
+
+What is the sha1 hash of: "scene-please"	15	
+	dd6311cc62f5382042e8febe21804b92b93262ea
+What is the sha256 hash of: "cotton-save"	15	
+	9e3a549621d36daa4e50e6ba779794913edea3d91154d5a2756e64a968235512
+What is the md5 hash of: "valley-fell"	15	
+	e1827b40e0c181d760fbe624db8c0124
+What is the md4 hash of: "ever-ears"	15
+	5a391aee8ceb6ac301ad7d9ba36d14d5	
+What is the whirlpool hash of: "Greece-train"	15
+	4cf1a06004bd969291c98c4332a6f035beb866b7f76cf55ad3bebc425d236b0e5a04c307e800f80a16b8dbdbf1f5ae70e40d4711925a6df4d02a70e6fe332a29

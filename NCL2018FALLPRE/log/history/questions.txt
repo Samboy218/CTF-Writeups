@@ -1,0 +1,13 @@
+this one is cool, find a tool to browse sqlite databases
+
+What tool was the hacker trying to operate?	15	
+	aircrack
+What is the model number of the device the hacker was targeting?	20	
+		it is a router, look in the history
+    TG852G
+What device (model number) was the hacker using to launch their attack?	20	
+    can't remember what i put, I think it was AWUS036NHA
+We've tracked down the hacker's IP to somewhere in Utah. What's their exact address?	50
+	papa johns
+    9848 S 610 E Sandy UT 84070
+

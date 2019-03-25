@@ -1,0 +1,10 @@
+On what day did Redhat push out a patch to address CVE-2017-6074 for their RHE Linux 7 kernel?	15	
+		https://access.redhat.com/security/cve/cve-2017-6074
+		find where it says "Red Hat Security Errata", then find linux 7 kernel
+	2017-02-22
+What is the largest UTC time that can be encoded by software with the Y2K38 bug (round DOWN to the minute)?	15
+		use cyberchef "from timestamp" using the max int
+	Tue 19 January 2038 03:14
+One of our developers is updating our software to make it more secure. They see the function, strcpy being called. What safe equivalent function should they use to prevent a buffer overflow?	15	
+	strncpy
+

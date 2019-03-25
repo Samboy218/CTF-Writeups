@@ -1,11 +1,11 @@
-##1% Power
+## 1% Power
 relevant files:
 * 1_power.jpg
 
-ezpz, just do "strings 1_power.jpg | grep flag"
+ezpz, just do `strings 1_power.jpg | grep flag`
 
 
-##15% Power
+## 15% Power
 relevant files:
 * 15_power.jpg
 * extracted_at_0xd110.jpg
@@ -13,7 +13,7 @@ relevant files:
 use cyberchef `extract files`, there is another jpg hidden in the jpg
 the extracted file has the image
 
-##30% Power
+## 30% Power
 relevant files:
 * 30_power.jpeg
 * 30_power-extracted.jpg
@@ -32,7 +32,7 @@ RAR
 
 just run unrar on the image
 
-##60% Power
+## 60% Power
 relevant files:
 * 60_power.png
 * 60_power2.png
@@ -45,7 +45,7 @@ is not right. Then you can see that there is a string "MEME.PNG", which I though
 the PNG in that string is in the right place to be magic bytes for the second IHDR chunk. I removed all of the data
 before the second PNG and voila, there be a flag.
 
-##Final Form
+## Final Form
 relevant files:
 * final_form.png
 

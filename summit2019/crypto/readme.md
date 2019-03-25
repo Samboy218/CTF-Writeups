@@ -18,14 +18,14 @@ we are given A, B, p, and g
 we want A^b % p, which is the key, so first we need to find b.
 b is just a random number such that g^b % p = B
 so we start i at 0 and calculate g^i % p, and if that equals B then i == b and we can calculate A^b % p
-
+``
 p = 522590389
 g = 2164
 
 A sends 492973999 to B
 B sends 8199534 to A
-
-##Caesar in russian
+``
+## Caesar in russian
 relevant files:
 * caesarRussian.py
 

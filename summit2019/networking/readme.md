@@ -1,4 +1,4 @@
-##JPG
+## JPG
 relevant files:
 * pcap.pcap
 * image.jpg

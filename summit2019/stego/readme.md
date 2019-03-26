@@ -84,7 +84,9 @@ relevant files:
 the hint for this one gave it all away, "you are not the least bit significant against my power. you'll be seeing red by the end of this"
 least bit significant, red. Red channel LSB. I used stegsolve to extract this data but at first it didn't work. I examined the red 0 channel
 and noticed a weird pattern along the left side of the image,  
-![redLSB](final_form_red0.bmp)  
+
+![redLSB](final_form_red0.png)  
+
 so I extracted the data by column instead of by row (stegsolve has an option for this) and the flag was at the beginning of the extracted data.
 
 - - -

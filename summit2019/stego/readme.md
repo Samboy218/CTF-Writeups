@@ -86,7 +86,9 @@ least bit significant, red. Red channel LSB. I used stegsolve to extract this da
 and noticed a weird pattern along the left side of the image,  
 
 ![redLSB](final_form_red0.png)  
+![redLSBZoom](final_form_red0_zoom.png)  
 
+To me that pattern on the far left column looks a lot like binary.  
 so I extracted the data by column instead of by row (stegsolve has an option for this) and the flag was at the beginning of the extracted data.
 
 - - -
